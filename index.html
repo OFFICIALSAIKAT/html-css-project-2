@@ -1,63 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- Red Rose Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Dela Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
-      rel="stylesheet"
-    />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container">
-      <section aria-label="navbar">
-        <nav class="navbar">
-          <div>
-            <img src="./assets/white-logo.png" alt="logo" class="logo" />
-          </div>
-          <div>
-            <ul class="list">
-              <li class="list-item">Our Menu</li>
-              <li class="list-item">Maps</li>
-              <li class="list-item">About</li>
-              <li class="list-item">Contact</li>
-            </ul>
-          </div>
-          <div>
-            <button class="button-small">Order</button>
-          </div>
-        </nav>
-      </section>
-      <!-- Hero Section -->
-      <section aria-label="hero">
-        <div class="hero">
-          <h1 class="hero-heading">
-            A Restaurant That Only Serves Delicious Food
-          </h1>
-          <!-- <p class="hero-paragraph">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere quis odio temporibus asperiores dolorem dicta, sint quod iure iusto nihil necessitatibus impedit accusantium similique. Minima asperiores adipisci voluptates incidunt accusantium?q
-          </p> -->
-          <button class="button-large">Read Our Menu</button>
-          <div class="bottom">
-            <div>
-              <img src="./assets/scrool.png" alt="bottom-logo" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8bc5c06ed1.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+<header id="color">
+    <nav>
+        
+        <img src="./assets/white-logo.png" alt="">
+       
+            <div class="navigation">
+                <ul>
+                    <i id="menu-close" class="fa-solid fa-circle-xmark"></i>
+                    <li><a href="#">Our Menu</a></li>
+                    <li><a href="">Maps</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                  <li><button class="button">Order</button></li>
+                </ul>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1024px-Hamburger_icon.svg.png" alt="" class="menu-btn">
             </div>
-          </div>
+    </nav>
+
+    <!-- Home -->
+
+    <section id="home">
+        <h2>A Resturant that only serves delicious foods.</h2>
+        
+        <div class="btn">
+            <a class="blue" href="">Read Our Menu</a>
+            
         </div>
-      </section>
-    </div>
-  </body>
+    </section>
+
+</header>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+    $('.menu-btn').click(function(){
+      $('nav .navigation ul').addClass('active')
+    });
+
+    $('#menu-close').click(function(){
+      $('nav .navigation ul').removeClass('active')
+    });
+  </script>
+
+</body>
 </html>
