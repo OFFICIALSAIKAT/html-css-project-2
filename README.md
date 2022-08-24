@@ -1,6 +1,6 @@
 # html-css-project-2
 
-## Project-1: [Live-Link](https://html-css-proj-2.netlify.app/)
+## Project-2: [Live-Link](https://html-css-proj-2.netlify.app/)
 
 ### Time taken to complete the project - Around 1 hour
 
